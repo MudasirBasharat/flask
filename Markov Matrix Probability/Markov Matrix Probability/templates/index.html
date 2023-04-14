@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>MATRIX SOLUTION</title>
+</head>
+
+<body>
+    <h1>Matrix Solution</h1>
+    <form method="POST">
+        <textarea name="matrix" rows="5" cols="30"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+    {% if result %}
+    <p>The result is: {{ result|join(', ') }}</p>
+    {% endif %} {% if error_msg %}
+    <p style="color:red;">{{ error_msg }}</p>
+    {% endif %}
+</body>
+
+</html>
